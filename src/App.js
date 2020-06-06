@@ -63,7 +63,7 @@ export default class App extends Component
 
   //Clear 
   clearCompleted = () => {
-    const answer = window.confirm("Are you sure you want to clear the completed items?")
+    const answer = swal("Are you sure you want to clear the completed items?")
     if(answer) {
       const temp = this.state.todoList.filter(item => !item.isComplete)
       this.setState({todoList: temp});
@@ -73,7 +73,7 @@ export default class App extends Component
   render() {
     return (
       <div className="App">
-        <h2 className='Title'>Welcome to your Todo App!</h2>
+        <h2 className='Title'>Welcome to your To-Do App!</h2>
         <TodoForm addNewTodo={this.addNewTodo} />
         <TodoList 
           todoItems={this.state.todoList} 

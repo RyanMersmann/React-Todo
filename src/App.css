@@ -9,15 +9,3 @@
     justify-content: center;
     align-items: center;
 }
-
-* {
-    background-color: rgb(172, 172, 172);
-}
-
-button {
-    background-color: white;
-}
-
-input {
-    background-color: white;
-}
